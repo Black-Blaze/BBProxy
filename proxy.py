@@ -1,24 +1,25 @@
 import socket, multiprocessing, time, json, webob
 
 class proxy:
-    def __init__(self, configFile, IP="0.0.0.0", port=3993):
+    def __init__(self, configFile, IP="0.0.0.0", port=3993, domain="0.0.0.0"):
 
         with open(configFile, "r") as f:
             self.config = json.load(f)
 
         self.outSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.outSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
+        self.d = "me.sushantshah.repl.co"
 
         self.IP = IP        
-        self.port = port    
-        print(f"External port opened at {IP}:{port}")
+        self.port = port 
+        self.domain = domain   
+        print(f"External port opened at {self.domain}:{port}")
 
     def alotServer(self):
         pass
 
     def receive(self, sock, chunk):
-        return sock.recv(chunk).replace(f"{self.IP}:{self.port}".encode(), "sushantshah.ml:80".encode())
+        return sock.recv(chunk)#.replace(f"{self.domain}:{self.port}".encode(), "self.d:80".encode())
 
     def proxyWorker(self, inf=None):
         sock, addr = inf
@@ -26,11 +27,17 @@ class proxy:
         print(inData)
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as inSock:
             inSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            server = ("sushantshah.ml", 80)#self.alotServer()
+            server = (self.d, 443)#self.alotServer()
+            print("****************")
+            print(inData)
+            print("****************")
             inSock.connect(server)
             inSock.send(inData)
-            sock.send(self.receive(inSock, 2**20).replace("sushantshah.ml:80".encode(), f"{self.IP}:{self.port}".encode()))
-        print(f"Incoming at sock: {sock} addr: {addr}")
+            rv = self.receive(inSock, 2**20)#.replace("self.d:80".encode(), f"{self.domain}:{self.port}".encode())
+            print(rv)
+            print("****************")
+            print(f"Incoming at sock: {sock} addr: {addr}")
+            sock.send(rv)
 
     def run(self):
         outSock = self.outSock
