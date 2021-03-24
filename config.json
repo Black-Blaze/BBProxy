@@ -1,3 +1,10 @@
 {
-    
+    "www" : {
+        "host" : "www.sushantshah.ml",
+        "port" : "80"
+    },
+    "a" : {
+        "host" : "www.google.com",
+        "port" : "80"
+    }
 }

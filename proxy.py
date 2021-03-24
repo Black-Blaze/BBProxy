@@ -9,11 +9,6 @@ class proxy:
         self.outSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.outSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-        self.inSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.inSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
-        server = ("www.sushantshah.ml", 80)#self.alotServer()
-        self.inSock.connect(server)
 
         self.IP = IP        
         self.port = port    
@@ -23,14 +18,18 @@ class proxy:
         pass
 
     def receive(self, sock, chunk):
-        return sock.recv(chunk).replace(f"{self.IP}:{self.port}".encode(), "www.sushantshah.ml:80".encode())
+        return sock.recv(chunk).replace(f"{self.IP}:{self.port}".encode(), "sushantshah.ml:80".encode())
 
     def proxyWorker(self, inf=None):
         sock, addr = inf
         inData = self.receive(sock, 2 ** 20)
         print(inData)
-        self.inSock.send(inData)
-        sock.send(self.inSock.recv(2**20).replace("www.sushantshah.ml:80".encode(), f"{self.IP}:{self.port}".encode()))
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as inSock:
+            inSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            server = ("sushantshah.ml", 80)#self.alotServer()
+            inSock.connect(server)
+            inSock.send(inData)
+            sock.send(self.receive(inSock, 2**20).replace("sushantshah.ml:80".encode(), f"{self.IP}:{self.port}".encode()))
         print(f"Incoming at sock: {sock} addr: {addr}")
 
     def run(self):

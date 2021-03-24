@@ -3,6 +3,10 @@ import multiprocessing
 import time  
 
 sock = socket.socket()
-sock.connect(("0.0.0.0", 3993))
+sock.connect
+sock.bind(("0.0.0.0", 4000))
+sock.listen(5)
 while True:
-    sock.send(input().encode())
+    sck, addr = sock.accept()
+    rv = sck.recv(2 ** 20)
+    if(rv != ""): sck.send(rv)
