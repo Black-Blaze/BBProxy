@@ -8,7 +8,7 @@ class proxy:
 
         self.outSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.outSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        self.d = "me.sushantshah.repl.co"
+        self.d = "localhost"
 
         self.IP = IP        
         self.port = port 
@@ -27,18 +27,18 @@ class proxy:
         print(inData)
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as inSock:
             inSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            server = (self.d, 443)#self.alotServer()
+            server = (self.d, 80)#self.alotServer()
             print("****************")
             print(inData)
             print("****************")
             inSock.connect(server)
             inSock.send(inData)
             rv = self.receive(inSock, 2**20)#.replace("self.d:80".encode(), f"{self.domain}:{self.port}".encode())
-            print(rv)
-            print("****************")
             print(f"Incoming at sock: {sock} addr: {addr}")
             sock.send(rv)
-
+        print("###############################################################################")
+        res = webob.response.Response(inData)
+        print(res.getKeys())
     def run(self):
         outSock = self.outSock
         outSock.bind((self.IP, self.port))
