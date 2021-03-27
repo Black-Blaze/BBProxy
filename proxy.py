@@ -2,7 +2,7 @@ import socket, multiprocessing, time, json, webob
 import request
 
 class proxy:
-    def __init__(self, configFile, IP="0.0.0.0", port=3993, domain="0.0.0.0"):
+    def __init__(self, configFile, domain="0.0.0.0"):
 
         with open(configFile, "r") as f:
             self.config = json.load(f)
@@ -11,13 +11,13 @@ class proxy:
         self.outSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.d = "localhost"
 
-        self.IP = IP        
-        self.port = port 
+        self.IP = self.config["config"]["addr"]
+        self.port = int(self.config["config"]["port"])
         self.domain = domain   
-        print(f"External port opened at {self.domain}:{port}")
+        print(f"External port opened at {self.domain}:{self.port}")
 
     def alotServer(self, pre):
-        return (self.config[pre]["host"], int(self.config[pre]["port"]))
+        return (self.config["hosts"][pre]["host"], int(self.config["hosts"][pre]["port"]))
 
     def receive(self, sock, chunk):
         recv = sock.recv(chunk)#.replace(f"{self.domain}:{self.port}".encode(), "self.d:80".encode())
@@ -31,14 +31,16 @@ class proxy:
         inData = self.receive(sock, 2 ** 20)
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as inSock:
             inSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            server = self.alotServer("*")
+            server = self.alotServer(inData.headers["Host"])
+            print(server)
             print("****************")
             print(inData.compile())
-            print("*************1111")
+            print("****************")
             inData.headers["Host"] = "www.sushantshah.ml"
             inSock.connect(server)
             inSock.send(inData.compile())
             rv = self.receive(inSock, 2**20)
+            rv.headers["Host"] = "0.0.0.0:2000"
             print(f"Incoming at sock: {sock} addr: {addr}")
             sock.send(rv.compile())
         print("################")

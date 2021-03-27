@@ -1,14 +1,20 @@
 {
-    "www" : {
-        "host" : "www.sushantshah.ml",
-        "port" : "80",
-        "b" : {
-        "host" : "www.sushantshah.ml",
-        "port" : "80"
+    "hosts" : {
+        "www" : {
+            "host" : "www.sushantshah.ml",
+            "port" : "80",
+            "b" : {
+            "host" : "www.sushantshah.ml",
+            "port" : "80"
+            }
+        },
+        "0.0.0.0:2000" : {
+            "host" : "127.0.0.1",
+            "port" : "8000"
         }
     },
-    "*" : {
-        "host" : "127.0.0.1",
-        "port" : "8000"
+    "config": {
+        "addr": "0.0.0.0",
+        "port": "2000"
     }
 }
