@@ -11,9 +11,9 @@ class request:
         self.headers = headerL
         if(len(_str.split(b"\r\n\r\n")) == 2):
             self.body = _str.split(b"\r\n\r\n")[1]
+            self.headers[b"Content-Length"] = str(len(self.body)).encode()
         else:
             self.body = None
-        self.headers[b"Content-Length"] = str(len(self.body)).encode()
         self.headers[b"Server"] = b"Why Bro???"
 
     def compile(self):

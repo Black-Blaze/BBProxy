@@ -20,11 +20,11 @@ class proxy:
         return (self.config["hosts"][pre]["host"], int(self.config["hosts"][pre]["port"]))
 
     def receive(self, sock, chunk):
-        recv = sock.recv(chunk)#.replace(f"{self.domain}:{self.port}".encode(), "self.d:80".encode())
-        req = request.request(recv)
-        if len(recv) < 1:
-            raise Exception("Empty Response")
-        return req
+        for trial in range(5):
+            recv = sock.recv(chunk)
+            req = request.request(recv)
+            if len(recv) > 1:
+                return req
 
     def proxyWorker(self, inf=None):
         sock, addr = inf
@@ -36,7 +36,15 @@ class proxy:
             inSock.connect(server)
             inSock.send(inData.compile())
             rv = self.receive(inSock, 2**20)
-            print(rv.headers)
+            print(rv.body)
+            if(inData.proto != b"GET /favicon.ico HTTP/1.1"):
+                with open("access-logs.txt", "a") as f:
+                    f.writelines(f"Request\n{str(inData.compile().decode())}\n\n")
+                    try:
+                        f.writelines(f"Response\n{str(rv.compile().decode())}\n")
+                    except:
+                        f.writelines(f"Response\nNOT PLAIN TEXT")
+                    f.writelines("***********************************************************************")
             #rv.headers["Host"] = "0.0.0.0:2000"
             print(f"Incoming at sock: {sock} addr: {addr}")
             sock.send(rv.compile())
