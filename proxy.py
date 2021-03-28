@@ -21,9 +21,9 @@ class proxy:
 
     def receive(self, sock, chunk):
         recv = sock.recv(chunk)#.replace(f"{self.domain}:{self.port}".encode(), "self.d:80".encode())
-        req = request.request(recv.decode())
-        print(recv)
-        print(req.compile())
+        req = request.request(recv)
+        if len(recv) < 1:
+            raise Exception("Empty Response")
         return req
 
     def proxyWorker(self, inf=None):
@@ -31,19 +31,15 @@ class proxy:
         inData = self.receive(sock, 2 ** 20)
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as inSock:
             inSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-            server = self.alotServer(inData.headers["Host"])
-            print(server)
-            print("****************")
-            print(inData.compile())
-            print("****************")
-            inData.headers["Host"] = "www.sushantshah.ml"
+            server = self.alotServer("0.0.0.0:2000")#inData.headers["Host"])
+            #inData.headers["Host"] = "www.sushantshah.ml"
             inSock.connect(server)
             inSock.send(inData.compile())
             rv = self.receive(inSock, 2**20)
-            rv.headers["Host"] = "0.0.0.0:2000"
+            print(rv.headers)
+            #rv.headers["Host"] = "0.0.0.0:2000"
             print(f"Incoming at sock: {sock} addr: {addr}")
             sock.send(rv.compile())
-        print("################")
     def run(self):
         outSock = self.outSock
         outSock.bind((self.IP, self.port))
