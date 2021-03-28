@@ -19,32 +19,32 @@ class proxy:
     def alotServer(self, pre):
         return (self.config["hosts"][pre]["host"], int(self.config["hosts"][pre]["port"]))
 
-    def receive(self, sock, chunk):
+    def receive(self, sock, chunk, hasContent=True):
         for trial in range(5):
             recv = sock.recv(chunk)
             req = request.request(recv)
-            if len(recv) > 1:
+            if len(req.body) > 1 or not hasContent:
                 return req
 
     def proxyWorker(self, inf=None):
         sock, addr = inf
-        inData = self.receive(sock, 2 ** 20)
+        inData = self.receive(sock, 2 ** 20, False)
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as inSock:
             inSock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             server = self.alotServer("0.0.0.0:2000")#inData.headers["Host"])
             #inData.headers["Host"] = "www.sushantshah.ml"
             inSock.connect(server)
             inSock.send(inData.compile())
-            rv = self.receive(inSock, 2**20)
+            rv = self.receive(inSock, self.config["config"]["maxRecieve"])
             print(rv.body)
             if(inData.proto != b"GET /favicon.ico HTTP/1.1"):
                 with open("access-logs.txt", "a") as f:
-                    f.writelines(f"Request\n{str(inData.compile().decode())}\n\n")
+                    f.writelines(f"\nRequest\n{str(inData.compile().decode())}")
                     try:
-                        f.writelines(f"Response\n{str(rv.compile().decode())}\n")
+                        f.writelines(f"\n\nResponse\n{str(rv.compile().decode())}\n")
                     except:
                         f.writelines(f"Response\nNOT PLAIN TEXT")
-                    f.writelines("***********************************************************************")
+                    f.writelines("\n***********************************************************************")
             #rv.headers["Host"] = "0.0.0.0:2000"
             print(f"Incoming at sock: {sock} addr: {addr}")
             sock.send(rv.compile())

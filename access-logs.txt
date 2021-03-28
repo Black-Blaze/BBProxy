@@ -1,32 +1,5 @@
+
 Request
-GET /image/icon-192x192.png HTTP/1.1
-Host: 0.0.0.0:2000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-DNT: 1
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Accept-Encoding: gzip, deflate
-Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
-Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
-Content-Length: 0
-Server: Why Bro???
-
-
-
-Response
-HTTP/1.1 200 OK
-Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:29:07 GMT
-Connection: close
-Content-Type: image/png
-Content-Length: 0
-Cache-Control: max-age=60
-
-
-***********************************************************************Request
 GET / HTTP/1.1
 Host: 0.0.0.0:2000
 Connection: keep-alive
@@ -34,7 +7,7 @@ Pragma: no-cache
 Cache-Control: no-cache
 DNT: 1
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
 Accept-Encoding: gzip, deflate
 Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
@@ -47,34 +20,7 @@ Server: Why Bro???
 Response
 HTTP/1.1 200 OK
 Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:37:48 GMT
-Connection: close
-Content-Type: text/html; charset=UTF-8
-Content-Length: 0
-
-
-***********************************************************************Request
-GET / HTTP/1.1
-Host: 0.0.0.0:2000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-DNT: 1
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Accept-Encoding: gzip, deflate
-Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
-Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
-Content-Length: 0
-Server: Why Bro???
-
-
-
-Response
-HTTP/1.1 200 OK
-Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:37:56 GMT
+Date: Sun, 28 Mar 2021 15:37:59 GMT
 Connection: close
 Content-Type: text/html; charset=UTF-8
 Content-Length: 3660
@@ -116,7 +62,7 @@ Content-Length: 3660
             </div>
         </noscript>
         <div id="nav">
-            <svg id="nav-back" width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <svg id="nav-back" width="48" height="48" viewBox="0 0 24 48" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.41 16.59L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.59Z" fill="white"/>
             </svg>
 
@@ -128,7 +74,7 @@ Content-Length: 3660
         <div id="chats"></div>
         <div id="msg">
             <div id="emojis">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M31 22C32.6569 22 34 20.6569 34 19C34 17.3431 32.6569 16 31 16C29.3431 16 28 17.3431 28 19C28 20.6569 29.3431 22 31 22Z" fill="black"/>
                     <path d="M17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.3431 16 14 17.3431 14 19C14 20.6569 15.3431 22 17 22Z" fill="black"/>
                     <path d="M31 22C32.6569 22 34 20.6569 34 19C34 17.3431 32.6569 16 31 16C29.3431 16 28 17.3431 28 19C28 20.6569 29.3431 22 31 22Z" fill="black"/>
@@ -140,20 +86,22 @@ Content-Length: 3660
                 <input type="text" aria-label="Message" placeholder="Message">
             </div>
             <div id="send">
-                <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.02 42L46 24L4.02 6L4 20L34 24L4 28L4.02 42Z" fill="#0F2126"/>
                 </svg>                    
             </div>
         </div>
     </body>
 </html>
-***********************************************************************Request
+
+***********************************************************************
+Request
 GET /css/desktop.css HTTP/1.1
 Host: 0.0.0.0:2000
 Connection: keep-alive
 Pragma: no-cache
 Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
 DNT: 1
 Accept: text/css,*/*;q=0.1
 Referer: http://0.0.0.0:2000/
@@ -168,133 +116,128 @@ Server: Why Bro???
 Response
 HTTP/1.1 200 OK
 Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:37:57 GMT
+Date: Sun, 28 Mar 2021 15:37:59 GMT
 Connection: close
 Content-Type: text/css; charset=UTF-8
-Content-Length: 0
+Content-Length: 1870
 Cache-Control: max-age=60
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
-***********************************************************************Request
-GET /manifest.json HTTP/1.1
-Host: 0.0.0.0:2000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
-DNT: 1
-Accept: */*
-Referer: http://0.0.0.0:2000/
-Accept-Encoding: gzip, deflate
-Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
-Content-Length: 0
-Server: Why Bro???
+#nav {
+    display: flex;
+    height: 80px;
 
+    color: white;
+    background-color: #0F2126;
+    box-shadow: 0px 4px 32px #0A161A;
+    
+    align-items: center;
+    justify-content: center;
 
+    font-family: "red hat display";
+    font-size: x-large;
 
-Response
-HTTP/1.1 200 OK
-Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:37:59 GMT
-Connection: close
-Content-Type: text/json; charset=UTF-8
-Content-Length: 0
-Cache-Control: max-age=60
-
-
-***********************************************************************Request
-GET /manifest.json HTTP/1.1
-Host: 0.0.0.0:2000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
-DNT: 1
-Accept: */*
-Referer: http://0.0.0.0:2000/
-Accept-Encoding: gzip, deflate
-Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
-Content-Length: 0
-Server: Why Bro???
-
-
-
-Response
-HTTP/1.1 200 OK
-Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:37:59 GMT
-Connection: close
-Content-Type: text/json; charset=UTF-8
-Content-Length: 676
-Cache-Control: max-age=60
-
-{
-  "name": "Open Chat",
-  "short_name": "Opch",
-  "icons": [
-    {
-      "src": "/image/icon-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/image/icon-256x256.png",
-      "type": "image/png",
-      "sizes": "256x256"
-    },
-    {
-      "src": "/image/icon-384x384.png",
-      "type": "image/png",
-      "sizes": "384x384"
-    },
-    {
-      "src": "/image/icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
-    }],
-  "theme_color": "#4a4a4a",
-  "background_color": "#3c3c3c",
-  "display": "fullscreen",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/android-pwa"
+    z-index: 10;
 }
-***********************************************************************Request
-GET /image/icon-192x192.png HTTP/1.1
-Host: 0.0.0.0:2000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
-DNT: 1
-Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
-Referer: http://0.0.0.0:2000/
-Accept-Encoding: gzip, deflate
-Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
-Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
-Content-Length: 0
-Server: Why Bro???
 
+#nav-back {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
 
+#ch-pane {
+    background-color:#0F2126;
+    height: calc(100vh - 80px);
+    width: 240px;
+}
 
-Response
-HTTP/1.1 200 OK
-Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:38:00 GMT
-Connection: close
-Content-Type: image/png
-Content-Length: 0
-Cache-Control: max-age=60
+#chats {
+    height:  calc(100vh - 80px);
+    width: calc(100vw - 240px);
 
+    position: absolute;
+    left: 240px;
+    top: 80px;
 
-***********************************************************************Request
+    background: #1B2C30;
+}
+
+#msg {
+    background-color:#0F2126;
+    position: absolute;
+
+    width: calc(100vw - 240px);
+    height: 68px;
+    left: 240px;
+    bottom: 0px;
+}
+
+#msg #emojis{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B2EDFF;
+}
+
+#msg #send{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B2EDFF;
+}
+
+#msg #msgBox {
+    position: absolute;
+    left: 68px;
+    top: 10px;
+    width: calc(100vw - 240px - 68px - 68px);
+    height: 48px;
+
+    background: #1B2C30;
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#msg #msgBox input {
+    background: none;
+    width: 100%;
+    margin: 0px 15px;
+    position: absolute;
+    border: none;
+    outline: none;
+}
+
+***********************************************************************
+Request
 GET /image/icon-512.png HTTP/1.1
 Host: 0.0.0.0:2000
 Connection: keep-alive
 Pragma: no-cache
 Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
 DNT: 1
 Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
 Referer: http://0.0.0.0:2000/
@@ -304,10 +247,10 @@ Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1
 Content-Length: 0
 Server: Why Bro???
 
-
-
 Response
-NOT PLAIN TEXT***********************************************************************Request
+NOT PLAIN TEXT
+***********************************************************************
+Request
 GET / HTTP/1.1
 Host: 0.0.0.0:2000
 Connection: keep-alive
@@ -315,7 +258,7 @@ Pragma: no-cache
 Cache-Control: no-cache
 DNT: 1
 Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
 Accept-Encoding: gzip, deflate
 Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
@@ -328,7 +271,7 @@ Server: Why Bro???
 Response
 HTTP/1.1 200 OK
 Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:38:17 GMT
+Date: Sun, 28 Mar 2021 15:40:11 GMT
 Connection: close
 Content-Type: text/html; charset=UTF-8
 Content-Length: 3660
@@ -370,7 +313,239 @@ Content-Length: 3660
             </div>
         </noscript>
         <div id="nav">
-            <svg id="nav-back" width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <svg id="nav-back" width="48" height="48" viewBox="0 0 24 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.41 16.59L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.59Z" fill="white"/>
+            </svg>
+
+            <label id="title">
+                GUILD
+            </label>
+        </div>
+        <div id="ch-pane"></div>
+        <div id="chats"></div>
+        <div id="msg">
+            <div id="emojis">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31 22C32.6569 22 34 20.6569 34 19C34 17.3431 32.6569 16 31 16C29.3431 16 28 17.3431 28 19C28 20.6569 29.3431 22 31 22Z" fill="black"/>
+                    <path d="M17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.3431 16 14 17.3431 14 19C14 20.6569 15.3431 22 17 22Z" fill="black"/>
+                    <path d="M31 22C32.6569 22 34 20.6569 34 19C34 17.3431 32.6569 16 31 16C29.3431 16 28 17.3431 28 19C28 20.6569 29.3431 22 31 22Z" fill="black"/>
+                    <path d="M17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.3431 16 14 17.3431 14 19C14 20.6569 15.3431 22 17 22Z" fill="black"/>
+                    <path d="M23.98 4C12.94 4 4 12.96 4 24C4 35.04 12.94 44 23.98 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 23.98 4ZM24 40C15.16 40 8 32.84 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 32.84 32.84 40 24 40ZM24 35C28.66 35 32.64 32.1 34.24 28H30.9C29.52 30.38 26.96 32 24 32C21.04 32 18.5 30.38 17.1 28H13.76C15.36 32.1 19.34 35 24 35Z" fill="black"/>
+                </svg>
+            </div>
+            <div id="msgBox">
+                <input type="text" aria-label="Message" placeholder="Message">
+            </div>
+            <div id="send">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.02 42L46 24L4.02 6L4 20L34 24L4 28L4.02 42Z" fill="#0F2126"/>
+                </svg>                    
+            </div>
+        </div>
+    </body>
+</html>
+
+***********************************************************************
+Request
+GET /css/desktop.css HTTP/1.1
+Host: 0.0.0.0:2000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
+DNT: 1
+Accept: text/css,*/*;q=0.1
+Referer: http://0.0.0.0:2000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
+Content-Length: 0
+Server: Why Bro???
+
+
+
+Response
+HTTP/1.1 200 OK
+Server: Why Bro???
+Date: Sun, 28 Mar 2021 15:40:12 GMT
+Connection: close
+Content-Type: text/css; charset=UTF-8
+Content-Length: 1870
+Cache-Control: max-age=60
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+#nav {
+    display: flex;
+    height: 80px;
+
+    color: white;
+    background-color: #0F2126;
+    box-shadow: 0px 4px 32px #0A161A;
+    
+    align-items: center;
+    justify-content: center;
+
+    font-family: "red hat display";
+    font-size: x-large;
+
+    z-index: 10;
+}
+
+#nav-back {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+#ch-pane {
+    background-color:#0F2126;
+    height: calc(100vh - 80px);
+    width: 240px;
+}
+
+#chats {
+    height:  calc(100vh - 80px);
+    width: calc(100vw - 240px);
+
+    position: absolute;
+    left: 240px;
+    top: 80px;
+
+    background: #1B2C30;
+}
+
+#msg {
+    background-color:#0F2126;
+    position: absolute;
+
+    width: calc(100vw - 240px);
+    height: 68px;
+    left: 240px;
+    bottom: 0px;
+}
+
+#msg #emojis{
+    height: 60px;
+    width: 60px;
+    border-radius: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B2EDFF;
+}
+
+#msg #send{
+    height: 60px;
+    width: 60px;
+    border-radius: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B2EDFF;
+}
+
+#msg #msgBox {
+    position: absolute;
+    left: 68px;
+    top: 10px;
+    width: calc(100vw - 240px - 68px - 68px);
+    height: 48px;
+
+    background: #1B2C30;
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#msg #msgBox input {
+    background: none;
+    width: 100%;
+    margin: 0px 15px;
+    position: absolute;
+    border: none;
+    outline: none;
+}
+
+***********************************************************************
+Request
+GET / HTTP/1.1
+Host: 0.0.0.0:2000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
+Content-Length: 0
+Server: Why Bro???
+
+
+
+Response
+HTTP/1.1 200 OK
+Server: Why Bro???
+Date: Sun, 28 Mar 2021 15:40:43 GMT
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Content-Length: 3660
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4A4A4A">
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js" ></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link href="image/icon-512.png" rel="icon"/>
+    <link href="image/icon-512.png" rel="apple-touch-icon"/>
+
+    <link rel="stylesheet" href="css/desktop.css"/>
+
+    <link rel="manifest" href="/manifest.json">
+
+    
+    <title>CoChat</title>
+</head>
+    <body>
+        <noscript>
+            <div>
+                I Feel So Sad Without JS :-(
+            </div>
+        </noscript>
+        <div id="nav">
+            <svg id="nav-back" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.41 16.59L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.59Z" fill="white"/>
             </svg>
 
@@ -401,13 +576,15 @@ Content-Length: 3660
         </div>
     </body>
 </html>
-***********************************************************************Request
+
+***********************************************************************
+Request
 GET /css/desktop.css HTTP/1.1
 Host: 0.0.0.0:2000
 Connection: keep-alive
 Pragma: no-cache
 Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
 DNT: 1
 Accept: text/css,*/*;q=0.1
 Referer: http://0.0.0.0:2000/
@@ -422,25 +599,152 @@ Server: Why Bro???
 Response
 HTTP/1.1 200 OK
 Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:38:17 GMT
+Date: Sun, 28 Mar 2021 15:40:43 GMT
 Connection: close
 Content-Type: text/css; charset=UTF-8
-Content-Length: 0
+Content-Length: 1870
 Cache-Control: max-age=60
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
-***********************************************************************Request
-GET /manifest.json HTTP/1.1
+#nav {
+    display: flex;
+    height: 80px;
+
+    color: white;
+    background-color: #0F2126;
+    box-shadow: 0px 4px 32px #0A161A;
+    
+    align-items: center;
+    justify-content: center;
+
+    font-family: "red hat display";
+    font-size: x-large;
+
+    z-index: 10;
+}
+
+#nav-back {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+#ch-pane {
+    background-color:#0F2126;
+    height: calc(100vh - 80px);
+    width: 240px;
+}
+
+#chats {
+    height:  calc(100vh - 80px);
+    width: calc(100vw - 240px);
+
+    position: absolute;
+    left: 240px;
+    top: 80px;
+
+    background: #1B2C30;
+}
+
+#msg {
+    background-color:#0F2126;
+    position: absolute;
+
+    width: calc(100vw - 240px);
+    height: 68px;
+    left: 240px;
+    bottom: 0px;
+}
+
+#msg #emojis{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B2EDFF;
+}
+
+#msg #send{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B2EDFF;
+}
+
+#msg #msgBox {
+    position: absolute;
+    left: 68px;
+    top: 10px;
+    width: calc(100vw - 240px - 68px - 68px);
+    height: 48px;
+
+    background: #1B2C30;
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#msg #msgBox input {
+    background: none;
+    width: 100%;
+    margin: 0px 15px;
+    position: absolute;
+    border: none;
+    outline: none;
+}
+
+***********************************************************************
+Request
+GET /image/icon-512.png HTTP/1.1
 Host: 0.0.0.0:2000
 Connection: keep-alive
 Pragma: no-cache
 Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
 DNT: 1
-Accept: */*
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
 Referer: http://0.0.0.0:2000/
 Accept-Encoding: gzip, deflate
 Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
+Content-Length: 0
+Server: Why Bro???
+
+Response
+NOT PLAIN TEXT
+***********************************************************************
+Request
+GET / HTTP/1.1
+Host: 0.0.0.0:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
 Content-Length: 0
 Server: Why Bro???
 
@@ -449,72 +753,205 @@ Server: Why Bro???
 Response
 HTTP/1.1 200 OK
 Server: Why Bro???
-Date: Sun, 28 Mar 2021 14:38:18 GMT
+Date: Sun, 28 Mar 2021 15:41:26 GMT
 Connection: close
-Content-Type: text/json; charset=UTF-8
-Content-Length: 676
-Cache-Control: max-age=60
+Content-Type: text/html; charset=UTF-8
+Content-Length: 3660
 
-{
-  "name": "Open Chat",
-  "short_name": "Opch",
-  "icons": [
-    {
-      "src": "/image/icon-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/image/icon-256x256.png",
-      "type": "image/png",
-      "sizes": "256x256"
-    },
-    {
-      "src": "/image/icon-384x384.png",
-      "type": "image/png",
-      "sizes": "384x384"
-    },
-    {
-      "src": "/image/icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
-    }],
-  "theme_color": "#4a4a4a",
-  "background_color": "#3c3c3c",
-  "display": "fullscreen",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/android-pwa"
-}
-***********************************************************************Request
-GET /image/icon-192x192.png HTTP/1.1
-Host: 0.0.0.0:2000
-Connection: keep-alive
-Pragma: no-cache
-Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
-DNT: 1
-Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
-Referer: http://0.0.0.0:2000/
-Accept-Encoding: gzip, deflate
-Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
-Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
-Content-Length: 0
-Server: Why Bro???
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4A4A4A">
 
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js" ></script>
 
-Response
-NOT PLAIN TEXT***********************************************************************Request
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link href="image/icon-512.png" rel="icon"/>
+    <link href="image/icon-512.png" rel="apple-touch-icon"/>
+
+    <link rel="stylesheet" href="css/desktop.css"/>
+
+    <link rel="manifest" href="/manifest.json">
+
+    
+    <title>CoChat</title>
+</head>
+    <body>
+        <noscript>
+            <div>
+                I Feel So Sad Without JS :-(
+            </div>
+        </noscript>
+        <div id="nav">
+            <svg id="nav-back" width="48" height="48" viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.41 16.59L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.59Z" fill="white"/>
+            </svg>
+
+            <label id="title">
+                GUILD
+            </label>
+        </div>
+        <div id="ch-pane"></div>
+        <div id="chats"></div>
+        <div id="msg">
+            <div id="emojis">
+                <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31 22C32.6569 22 34 20.6569 34 19C34 17.3431 32.6569 16 31 16C29.3431 16 28 17.3431 28 19C28 20.6569 29.3431 22 31 22Z" fill="black"/>
+                    <path d="M17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.3431 16 14 17.3431 14 19C14 20.6569 15.3431 22 17 22Z" fill="black"/>
+                    <path d="M31 22C32.6569 22 34 20.6569 34 19C34 17.3431 32.6569 16 31 16C29.3431 16 28 17.3431 28 19C28 20.6569 29.3431 22 31 22Z" fill="black"/>
+                    <path d="M17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.3431 16 14 17.3431 14 19C14 20.6569 15.3431 22 17 22Z" fill="black"/>
+                    <path d="M23.98 4C12.94 4 4 12.96 4 24C4 35.04 12.94 44 23.98 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 23.98 4ZM24 40C15.16 40 8 32.84 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 32.84 32.84 40 24 40ZM24 35C28.66 35 32.64 32.1 34.24 28H30.9C29.52 30.38 26.96 32 24 32C21.04 32 18.5 30.38 17.1 28H13.76C15.36 32.1 19.34 35 24 35Z" fill="black"/>
+                </svg>
+            </div>
+            <div id="msgBox">
+                <input type="text" aria-label="Message" placeholder="Message">
+            </div>
+            <div id="send">
+                <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.02 42L46 24L4.02 6L4 20L34 24L4 28L4.02 42Z" fill="#0F2126"/>
+                </svg>                    
+            </div>
+        </div>
+    </body>
+</html>
+
+***********************************************************************
+Request
 GET /image/icon-512.png HTTP/1.1
 Host: 0.0.0.0:2000
 Connection: keep-alive
 Pragma: no-cache
 Cache-Control: no-cache
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
 DNT: 1
 Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://0.0.0.0:2000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
+Content-Length: 0
+Server: Why Bro???
+
+Response
+NOT PLAIN TEXT
+***********************************************************************
+Request
+GET / HTTP/1.1
+Host: 0.0.0.0:2000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
+Content-Length: 0
+Server: Why Bro???
+
+
+
+Response
+HTTP/1.1 200 OK
+Server: Why Bro???
+Date: Sun, 28 Mar 2021 15:41:38 GMT
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Content-Length: 3660
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4A4A4A">
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js" ></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link href="image/icon-512.png" rel="icon"/>
+    <link href="image/icon-512.png" rel="apple-touch-icon"/>
+
+    <link rel="stylesheet" href="css/desktop.css"/>
+
+    <link rel="manifest" href="/manifest.json">
+
+    
+    <title>CoChat</title>
+</head>
+    <body>
+        <noscript>
+            <div>
+                I Feel So Sad Without JS :-(
+            </div>
+        </noscript>
+        <div id="nav">
+            <svg id="nav-back" width="48" height="48" viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.41 16.59L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.59Z" fill="white"/>
+            </svg>
+
+            <label id="title">
+                GUILD
+            </label>
+        </div>
+        <div id="ch-pane"></div>
+        <div id="chats"></div>
+        <div id="msg">
+            <div id="emojis">
+                <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31 22C32.6569 22 34 20.6569 34 19C34 17.3431 32.6569 16 31 16C29.3431 16 28 17.3431 28 19C28 20.6569 29.3431 22 31 22Z" fill="black"/>
+                    <path d="M17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.3431 16 14 17.3431 14 19C14 20.6569 15.3431 22 17 22Z" fill="black"/>
+                    <path d="M31 22C32.6569 22 34 20.6569 34 19C34 17.3431 32.6569 16 31 16C29.3431 16 28 17.3431 28 19C28 20.6569 29.3431 22 31 22Z" fill="black"/>
+                    <path d="M17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.3431 16 14 17.3431 14 19C14 20.6569 15.3431 22 17 22Z" fill="black"/>
+                    <path d="M23.98 4C12.94 4 4 12.96 4 24C4 35.04 12.94 44 23.98 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 23.98 4ZM24 40C15.16 40 8 32.84 8 24C8 15.16 15.16 8 24 8C32.84 8 40 15.16 40 24C40 32.84 32.84 40 24 40ZM24 35C28.66 35 32.64 32.1 34.24 28H30.9C29.52 30.38 26.96 32 24 32C21.04 32 18.5 30.38 17.1 28H13.76C15.36 32.1 19.34 35 24 35Z" fill="black"/>
+                </svg>
+            </div>
+            <div id="msgBox">
+                <input type="text" aria-label="Message" placeholder="Message">
+            </div>
+            <div id="send">
+                <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.02 42L46 24L4.02 6L4 20L34 24L4 28L4.02 42Z" fill="#0F2126"/>
+                </svg>                    
+            </div>
+        </div>
+    </body>
+</html>
+
+***********************************************************************
+Request
+GET /css/desktop.css HTTP/1.1
+Host: 0.0.0.0:2000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
+DNT: 1
+Accept: text/css,*/*;q=0.1
 Referer: http://0.0.0.0:2000/
 Accept-Encoding: gzip, deflate
 Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
@@ -525,4 +962,139 @@ Server: Why Bro???
 
 
 Response
-NOT PLAIN TEXT***********************************************************************
+HTTP/1.1 200 OK
+Server: Why Bro???
+Date: Sun, 28 Mar 2021 15:41:38 GMT
+Connection: close
+Content-Type: text/css; charset=UTF-8
+Content-Length: 1870
+Cache-Control: max-age=60
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+#nav {
+    display: flex;
+    height: 80px;
+
+    color: white;
+    background-color: #0F2126;
+    box-shadow: 0px 4px 32px #0A161A;
+    
+    align-items: center;
+    justify-content: center;
+
+    font-family: "red hat display";
+    font-size: x-large;
+
+    z-index: 10;
+}
+
+#nav-back {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+#ch-pane {
+    background-color:#0F2126;
+    height: calc(100vh - 80px);
+    width: 240px;
+}
+
+#chats {
+    height:  calc(100vh - 80px);
+    width: calc(100vw - 240px);
+
+    position: absolute;
+    left: 240px;
+    top: 80px;
+
+    background: #1B2C30;
+}
+
+#msg {
+    background-color:#0F2126;
+    position: absolute;
+
+    width: calc(100vw - 240px);
+    height: 68px;
+    left: 240px;
+    bottom: 0px;
+}
+
+#msg #emojis{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B2EDFF;
+}
+
+#msg #send{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B2EDFF;
+}
+
+#msg #msgBox {
+    position: absolute;
+    left: 68px;
+    top: 10px;
+    width: calc(100vw - 240px - 68px - 68px);
+    height: 48px;
+
+    background: #1B2C30;
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-items: center;
+}
+
+#msg #msgBox input {
+    background: none;
+    width: 100%;
+    margin: 0px 15px;
+    position: absolute;
+    border: none;
+    outline: none;
+}
+
+***********************************************************************
+Request
+GET /image/icon-512.png HTTP/1.1
+Host: 0.0.0.0:2000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
+DNT: 1
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://0.0.0.0:2000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: _ga_9BNKJPNBDV=GS1.1.1616862479.1.0.1616862479.0; _ga=GA1.1.1718340246.1616862479
+Content-Length: 0
+Server: Why Bro???
+
+Response
+NOT PLAIN TEXT
+***********************************************************************
